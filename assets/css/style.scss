@@ -210,37 +210,57 @@ footer::before {
 $tab: 768px;
 $phone: 400px;
 
-@media screen and (max-width: $tab) {
-    .growcon {
-        display: block;
-        .growtext, .growimg {
-            width: 100%;
+.growtogether .container {
+    @media screen and (max-width: $tab) {
+        .growcon {
+            display: block;
+            .growtext, .growimg {
+                width: 100%;
+            }
         }
     }
-    .footer-info {
-        display: block;
-        .connect, .form {
-            width: 100%;
-        }
-    }
-
 }
-  
-@media screen and (max-width: $phone) {
-    .logo {
-        img {
-            width: 180px;
+footer .container {
+    @media screen and (max-width: $tab) {
+        .footer-info {
+            display: block;
+            .connect, .form {
+                width: 100%;
+            }
+        }
+    
+    }
+}
+
+header .container {
+    @media screen and (max-width: $phone) {
+        .logo {
+            img {
+                width: 180px;
+            }
+        }
+        .freeLogin {
+            margin-top: 6px;
+        }
+        input[type="text"] {
+            width: 100%;
+            margin-right: 0;
+        }
+        input[type="submit"] {
+           margin-top: 6px;
         }
     }
-    .freeLogin {
-        margin-top: 6px;
-    }
-    input[type="text"] {
-        width: 100%;
-        margin-right: 0;
-    }
-    input[type="submit"] {
-       margin-top: 6px;
+} 
+
+footer .container {
+    @media screen and (max-width: $phone) {
+        input[type="text"] {
+            width: 100%;
+            margin-right: 0;
+        }
+        input[type="submit"] {
+           margin-top: 6px;
+        }
     }
 }
   
